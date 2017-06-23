@@ -7,8 +7,7 @@ document.getElementById("videoBtn").addEventListener("click", function(){
 
 //Array of test questions
 
-var quiz = [
-  {
+/*  {
   "Question": "Is Michael Scott the world\'s best boss?",
   "A": "Yes"
   "B": "Who is Michael Scott?"
@@ -18,7 +17,7 @@ var quiz = [
   {
     "Question": "A second question",
     "A": ""
-    "B": ""
+    "B":
     "C":
     "D":
   },
