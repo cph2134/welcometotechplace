@@ -1,1 +1,27 @@
-/*CSS Stylesheet*/
+
+html, body {
+height: 100%;
+  width: 100%;
+}
+
+.background1 {
+  height: 150%;
+  background-image: url(https://static.pexels.com/photos/82256/pexels-photo-82256.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+h1 {
+  font-family: "Montserrat";
+  font-size: 50px;
+}
+
+a {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-color: black;
+}
+
+/*Hides techEtiquette101 video and take the quiz button on page load*/
+div #techEtiquette101 {
+  display: none;
+}
