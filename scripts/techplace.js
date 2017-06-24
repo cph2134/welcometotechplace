@@ -43,7 +43,9 @@ var quiz = [
     answer: "Clearly, yes"
   }
 ];
-
+/* right now this code works by printing out q1 and the answers for q1, then over
+writing it with q1 + q1 answers + q2 + q2answers, etc. That is inefficient and not
+really what I want to happen. If I have time, I want to see if I can fix it.*/
 
 quizBtnEl.addEventListener("click", function(){
   var quizHTML = "";
@@ -51,30 +53,15 @@ quizBtnEl.addEventListener("click", function(){
     quizHTML += `<li id="">`;
     quizHTML += quiz[i].question;
     quizHTML += `</li>`;
-    quizHTML += `<div class="radio">`;
-    quizHTML += `<label>`;
-    quizHTML += `<input type="radio" name="q-${i}" value="${quiz[i].options[0]}">`;
-    quizHTML += `${quiz[i].options[0]}`;
-    quizHTML += `</label>`;
-    quizHTML += `</div>`;
-    quizHTML += `<div class="radio">`;
-    quizHTML += `<label>`;
-    quizHTML += `<input type="radio" name="q-${i}" value="${quiz[i].options[1]}">`;
-    quizHTML += `${quiz[i].options[1]}`;
-    quizHTML += `</label>`;
-    quizHTML += `</div>`;
-    quizHTML += `<div class="radio">`;
-    quizHTML += `<label>`;
-    quizHTML += `<input type="radio" name="q-${i}" value="${quiz[i].options[2]}">`;
-    quizHTML += `${quiz[i].options[2]}`;
-    quizHTML += `</label>`;
-    quizHTML += `</div>`;
-    quizHTML += `<div class="radio">`;
-    quizHTML += `<label>`;
-    quizHTML += `<input type="radio" name="q-${i}" value="${quiz[i].options[3]}">`;
-    quizHTML += `${quiz[i].options[3]}`;
-    quizHTML += `</label>`;
-    quizHTML += `</div>`;
-      quizEl.innerHTML = quizHTML;
+      var multipleHTML = "";
+      for (var j = 0; j < quiz[i].options.length; j++) {
+        multipleHTML += `<div class="radio">`;
+        multipleHTML += `<label>`;
+        multipleHTML += `<input type="radio" name="q-${i}" value="${quiz[i].options[j]}">`;
+        multipleHTML += `${quiz[i].options[j]}`;
+        multipleHTML += `</label>`;
+        multipleHTML += `</div>`;
+      }
+      quizEl.innerHTML = quizHTML += multipleHTML;
   }
 });
