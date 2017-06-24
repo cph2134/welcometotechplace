@@ -15,15 +15,31 @@ h1 {
   font-size: 50px;
 }
 
+h2, h3, h4 {
+  font-family: "Montserrat";
+}
+
 a {
   font-family: "Montserrat";
   font-size: 25px;
   font-color: black;
 }
 
+#techEtiquette101 h4 {
+  padding-top: 35px;
+}
+
 /*Hides techEtiquette101 video and take the quiz button on page load*/
 div #techEtiquette101 {
   display: none;
+}
+
+div #checkQuiz {
+  display: none;
+}
+
+div .chkQuiz {
+  padding-bottom: 20px; 
 }
 
 #quizQuestions {

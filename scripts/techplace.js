@@ -58,10 +58,14 @@ quizBtnEl.addEventListener("click", function(){
         multipleHTML += `<div class="radio">`;
         multipleHTML += `<label>`;
         multipleHTML += `<input type="radio" name="q-${i}" value="${quiz[i].options[j]}">`;
-        multipleHTML += `${quiz[i].options[j]}`;
+        multipleHTML += quiz[i].options[j];
         multipleHTML += `</label>`;
         multipleHTML += `</div>`;
       }
       quizEl.innerHTML = quizHTML += multipleHTML;
   }
 });
+
+document.querySelector("#officeQuiz").addEventListener("click", function(){
+    document.querySelector("#checkQuiz").style.display = "block"
+  });
