@@ -4,64 +4,62 @@
 		<title>Welcome to Tech Place</title>
 		<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel='stylesheet'>
-	 	<link rel="stylesheet" href="css/styles.css">
-
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
-<body>
-	<div class="container-fluid background1">
-		<h1>Welcome to Tech Place</h1>
-		<h2>
-			<ol>
-					<li>Think Big</li>
-					<li>Work Smart</li>
-					<li>Play Nice</li>
-			</ol>
-		</h2>
-		<h3>Welcome to your new job. We want you to succeed here, so whether it's your first day of work <em> ever </em> or you're the new CTO (ok, maybe not if you're the CTO), here are a few resources to help you do your best work and help others do their best work.
-		</h3>
-		<!-- button that reveals video and quiz button -->
-		<div class = "row">
-			<div class="col-xs-12">
-				<button id = "videoBtn" type="button" class="btn-default btn-lg">
-					Let's Get Started!
-				</button>
-			</div>
-		</div>
-		<!-- video of workplace etiquette + quiz button-->
-		<!-- ADD SOME INSTRUCTIONS HERE ABOUT WATCHING THE VIDEO THAN TAKING THE QUIZ!!-->
-		<div class = "row" id="techEtiquette101">
-			<div class="col-xs-12">
-				<h4>
-				Watch the video, then take the quiz. When you are confident about your answers, click submit to see how you did.
-				</h4>
-			</div>
-			<div class = "col-xs-12">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/TWzezWq7FkA" frameborder="0" style="padding:20px;" allowfullscreen>
-				</iframe>
-			</div>
-		<!-- take the quiz button - onclick should reveal quiz questions created by
-		a function that loops through an array -->
-			<div class="col-xs-12">
-				<button type = "button" class="btn-default btn-lg" id="officeQuiz">
-					Take the Quiz
-				</button>
-			</div>
-		</div>
-		<div class = "row">
-			<div class = "col-xs-12" >
-					<ol id = "quizQuestions">
+	<body>
+		<div class="container-fluid background1">
+			<h1>Welcome to Tech Place</h1>
+			<h2>
+				<ol>
+						<li>Think Big</li>
+						<li>Work Smart</li>
+						<li>Play Nice</li>
 					</ol>
-			<!-- here's where the quiz questions should go -->
-			</div>
-		</div>
+			</h2>
+			<h3>Welcome to your new job. We want you to succeed here, so whether it's your first day of work <em> ever </em> or you're the new CTO (ok, maybe not if you're the CTO), here are a few resources to help you do your best work and help others do their best work.
+			</h3>
+				<!-- button that reveals video and quiz button -->
 			<div class="row">
-				<div class="col-xs-12 chkQuiz">
-					<button id="checkQuiz" type="button" class="btn-default btn-lg">
-						Submit
+				<div class="col-xs-12">
+					<button id="videoBtn" type="button" class="btn-default btn-lg">
+						Let's Get Started!
 					</button>
 				</div>
 			</div>
-	</div>
-	<script src="scripts/techplace.js"></script>
-</body>
+				<!-- video of workplace etiquette + quiz button-->
+				<!-- ADD SOME INSTRUCTIONS HERE ABOUT WATCHING THE VIDEO THAN TAKING THE QUIZ!!-->
+			<div class="row" id="techEtiquette101">
+				<div class="col-xs-12">
+					<h4>
+						Watch the video, then take the quiz. When you are confident about your answers, click submit to see how you did.
+					</h4>
+				</div>
+				<div class="col-xs-12">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/TWzezWq7FkA" frameborder="0" style="padding:20px;" allowfullscreen>
+					</iframe>
+				</div>
+			<!-- take the quiz button - onclick should reveal quiz questions created by
+		a function that loops through an array -->
+				<div class="col-xs-12">
+					<button type="button" class="btn-default btn-lg" id="officeQuiz">
+						Take the Quiz
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<ol id="quizQuestions">
+				<!-- here's where the quiz questions should go -->
+					</ol>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 chkQuiz">
+					<button id="checkQuiz" type="button" class="btn-default btn-lg">
+							Submit
+					</button>
+				</div>
+			</div>
+			<script src="scripts/techplace.js"></script>
+	</body>
 </html>
