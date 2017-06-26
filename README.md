@@ -8,9 +8,8 @@ If I were to build this page (or realistically oversee someone else building it,
 
 Demonstration Page:
 
+https://cph2134.github.io/welcometotechplace/
+
 Youtube Video:
 
-
-
-Link to demonstration page (i.e. Github Pages)
-Link to YouTube reflection video
+https://www.youtube.com/watch?v=E8gyszwY_Sc

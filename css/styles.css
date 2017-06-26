@@ -36,6 +36,8 @@ div #techEtiquette101 {
   display: none;
 }
 
+/*hides the check quiz button, which displays when the quiz is written out. */
+
 div #checkQuiz {
   display: none;
 }
